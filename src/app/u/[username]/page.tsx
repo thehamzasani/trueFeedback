@@ -87,12 +87,16 @@ export default function SendMessage() {
   };
 
   const fetchSuggestedMessages = async () => {
-    try {
-      complete('');
-    } catch (error) {
-      console.error('Error fetching messages:', error);
-      // Handle error appropriately
-    }
+    // try {
+    //   complete('');
+    // } catch (error) {
+    //   console.error('Error fetching messages:', error);
+    //   // Handle error appropriately
+    // }
+    toast({
+        title: "This feature is under development.",
+        variant: 'default',
+      });
   };
 
   return (

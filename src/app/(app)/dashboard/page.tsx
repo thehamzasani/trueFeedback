@@ -146,7 +146,7 @@ function UserDashboard() {
             disabled
             className="input input-bordered w-full p-2 mr-2"
           />
-          <Button onClick={copyToClipboard}>Copy</Button>
+          <Button onClick={copyToClipboard} className="w-full md:w-auto bg-[#00C1B0] text-white" >Copy</Button>
         </div>
       </div>
 
