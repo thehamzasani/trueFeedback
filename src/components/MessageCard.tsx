@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import axios, { AxiosError } from 'axios';
 import dayjs from 'dayjs';
-import { X } from 'lucide-react';
+import { LucideTrash2, Trash, Trash2, Trash2Icon, X } from 'lucide-react';
 import { Message } from '@/model/User';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
@@ -57,8 +57,8 @@ export function MessageCard({ message, onMessageDelete }: MessageCardProps) {
           <CardTitle>{message.content}</CardTitle>
           <AlertDialog>
             <AlertDialogTrigger asChild>
-              <Button variant='destructive'>
-                <X className="w-5 h-5" />
+              <Button  className="bg-red-600 hover:bg-red-700 text-white" >
+                <Trash2 className="w-5 h-5" />
               </Button>
             </AlertDialogTrigger>
             <AlertDialogContent>
